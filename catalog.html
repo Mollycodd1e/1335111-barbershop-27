@@ -206,10 +206,25 @@
           <a href="https://htmlacademy.ru">HTML Academy</a>
       </footer> 
       <section>
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль</p>
-        <!--Форма-->
-        <button type="button">Закрыть</button>  
+        <h2 class="visually-hidden">Личный кабинет</h2>
+          <p>Введите свой логин и пароль</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="user-login">Введите почту</label>
+            <input type="email" name="login" id="user-login" placeholder="htmlacademia@gmail.com">
+          </div>
+          <div>
+            <label for="user-password">Введите пароль</label>
+            <input type="password" name="password" id="user-password" placeholder="*********">
+          </div>
+          <div>
+            <input type="chekbox" name="remember" id="remember-password">
+            <label for="remember-passwor"> Запомните меня</label>       
+            <a href="#">Я забыл пароль</a>
+          </div>  
+          <button type="submit">Войти</button>  
+        </form>  
+        <button type="button">Закрыть</button> 
       </section>   
     </body>
  </html>     

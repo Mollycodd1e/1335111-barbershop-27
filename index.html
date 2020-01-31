@@ -22,7 +22,7 @@
             <img src="img/login.svg" width="14" height="14" alt="Указатель входа в ЛК">
           </li>  
           <li>
-            <button type="button">Войти</button>
+            <a href="login.html">Вход</a>
           </li>
         </ul>   
       </nav>  
@@ -30,7 +30,7 @@
     <main>
       <h1>Барбершоп «Бородинский»</h1> 
         <section>
-          <h2>Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
             <ul>
               <li>
                 <h3>Быстро</h3>
@@ -87,7 +87,25 @@
         <section>
           <h3>Записаться</h3>
             <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p> 
-            <!-- Форма -->       
+            <form action="https://echo.htlacademy.ru" method="post">
+              <div>
+                <label for="appointment-date">Дата</label>
+                <input type="date" name="date" id="appointment-date" value="08.10.2017">
+              </div>
+              <div>
+                <label for="appointment-time">Время</label>
+                <input type="time" name="time" id="appointment-time" value="10:00">
+              </div>  
+              <div>
+                <label for="appointment-name">Ваше имя</label>
+                <input type="name" name="name" id="appointment-name" placeholder="Борода">
+              </div>
+              <div>
+                <label for="phone">Телефон</label>
+                <input type="text" name="phone" id="phone" placeholder="+7 123 456-78-90">
+              </div>   
+              <button type="sumbit">Отправить</button>  
+            </form>         
         </section>
     </main>
     <footer>
@@ -99,9 +117,9 @@
       <div>
         <p>давайте дружить!</p>
           <ul>
-            <li><a href="#"><img src="img/vk.svg" width="27" height="15" alt="Вконтакте"></a></li>
-            <li><a href="#"><img src="img/facebook.svg" width="11" height="22" alt="Фейсбук"></a></li>
-            <li><a href="#"><img src="img/instagram.svg" width="20" height="20" alt="Инстаграм"></a></li>
+            <li><a href="#" alt="Vkontakte"></a></li>
+            <li><a href="#" alt="Facebook"></a></li>
+            <li><a href="#" alt="Instagram"></a></li>
           </ul>
       </div>        
       <p>
@@ -109,9 +127,24 @@
         <a href="https://htmlacademy.ru">HTML Academy</a>
     </footer>  
     <section>
-      <h2>Личный кабинет</h2>
+      <h2 class="visually-hidden">Личный кабинет</h2>
       <p>Введите свой логин и пароль</p>
-      <!--Форма-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="user-login">Введите почту</label>
+            <input type="email" name="login" id="user-login" placeholder="htmlacademia@gmail.com">
+          </div>
+          <div>
+            <label for="user-password">Введите пароль</label>
+            <input type="password" name="password" id="user-password" placeholder="*********">
+          </div>
+          <div>
+            <input type="chekbox" name="remember" id="remember-password">
+            <label for="remember-passwor"> Запомните меня</label>       
+            <a href="#">Я забыл пароль</a>
+          </div>  
+          <button type="submit">Войти</button>  
+        </form>  
       <button type="button">Закрыть</button>  
     </section>   
   </body>

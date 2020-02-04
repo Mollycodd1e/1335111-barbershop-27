@@ -13,7 +13,7 @@
         <a>
           <img src="img/index-logo.svg" width="371" height="155" alt="Логотип Барбершопа «Бородинский»">
         </a>  
-        <ul class="site-naogation">
+        <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс лист</a></li>
@@ -61,7 +61,7 @@
                 <p>В нашей команде пополение, Борис «Бритва стригунец»,обладатель множества титулов и наград пополнил наши стройные ряды</p>
                 <time datetime="2016-01-18">18 января</time>
               </li class="news-item">
-              <a href="news.html">Новости</a>
+              <a class="button" href="news.html">Новости</a>
             </ul>
         </section>
         <section class="gallery">
@@ -87,8 +87,8 @@
                пн-пт:c 10:00 до 22:00<br>
                сб-вс:с 10:00 до 19:00<br>
             </p>
-          <a href="map.html">Как проехать</a>
-          <a href="backcall">Обратная связь</a>
+          <a class="button" href="map.html">Как проехать</a>
+          <a class="button" href="backcall">Обратная связь</a>
         </section>      
         <section class="appointment"> 
           <h3>Записаться</h3>
@@ -110,7 +110,7 @@
                 <label for="phone">Телефон</label>
                 <input type="text" name="phone" id="phone" placeholder="+7 123 456-78-90">
               </div>   
-              <button type="sumbit">Отправить</button>  
+              <button class="button" type="sumbit">Отправить</button>  
             </form>         
         </section>
         </div>
@@ -139,15 +139,18 @@
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <div>
             <label class="visually-hidden" for="user-login">Логин</label>
-            <input class="login-icon-user" type="email" name="login" id="user-login" placeholder="htmlacademia@gmail.com">
+            <input class="login-icon-user" type="text" name="login" id="user-login" placeholder="htmlacademia@gmail.com">
           </div>
           <div>
             <label class="visually-hidden" for="user-password">Введите пароль</label>
-            <input class="login-icon-user" type="password" name="password" id="user-password" placeholder="*********">
+            <input class="login-icon-password" type="password" name="password" id="user-password" placeholder="*********">
           </div>
           <div class="login-password-info">
-            <input class="checkbox" type="chekbox" name="remember" id="remember-password">
-            <label class="login-checkbox" for="remember-passwor"><span class="checkbox-indicator"> Запомните меня</span></label>       
+            <label class="login-checkbox" >
+              <input class="visually-hidden" type="checkbox" name="remember">
+              <span class="checkbox-indicator"></span>
+              Запомните меня
+            </label>       
             <a class="restore" href="#">Я забыл пароль</a>
           </div>  
           <button class="button" type="submit">Войти</button>  
